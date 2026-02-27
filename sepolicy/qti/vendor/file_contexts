@@ -67,6 +67,9 @@
 # Devicetree
 /sys/firmware/devicetree/base/chosen(/.*)?    u:object_r:sysfs_dt_chosen:s0
 
+# Double Tap
+/sys/devices/virtual/touchscreen/primary/double_tap_enabled                            u:object_r:vendor_sysfs_touchpanel:s0
+
 # Fingerprint
 /data/vendor/.fps(/.*)?                                                           u:object_r:fingerprint_vendor_data_file:s0
 /data/vendor/egis(/.*)?                                                           u:object_r:fingerprint_vendor_data_file:s0
